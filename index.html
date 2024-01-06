@@ -9,22 +9,47 @@
 </head>
 
 <body> <!-- -->
-    <h1>Aprendiendo HTML</h1>
+    <h1 id="inicio">Aprendiendo HTML</h1>
     <hr>
-    <h2>Etiquetas de texto basicas</h2>
+    <h3>Temario del Curso</h3>
+    <!-- ul>li*18>a -->
+    <ul>
+        <li><a href="#inicio">Aprendiendo</a></li>
+        <li><a href="#EtiquetasBasicas">Etiquetas de texto basicas</a></li>
+        <li><a href="index.html#texto-semantico">Etiquetas de texto semanticas</a></li>
+        <li><a href="index.html#EtiquetasSalto">Etiquetas de saltos</a></li>
+        <li><a href="index.html#EtiquetasFormateo">Etiquetas de Formateo</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href="index.html#inicio">☝️</a></li>
+    </ul>
+    <h2 id="EtiquetasBasicas">Etiquetas de texto basicas</h2>
     <p>Palabras en <b>negrita</b>, <i>itálica</i>, <u>subrayado</u>, e=mc<sup>2</sup>,
         H<sub>2</sub>O, <mark>marcatexto</mark> <small>letras pequeñas</small></p>
+        <li><a href="index.html#inicio">☝️</a></li>
     <hr>
-    <h2>Etiquetas de texto semanticas</h2>
+    <h2 id="texto-semantico">Etiquetas de texto semanticas</h2>
     <strong>Este texto es importante</strong> <em>Este texto hace énfasis</em>
     <blockquote>Yo sólo se, que nada se</blockquote>
     <cite>Sócrates</cite>
+    <li><a href="index.html#inicio">☝️</a></li>
     <hr>
-    <h2>Etiquetas de saltos</h2>
+    <h2 id="EtiquetasSalto">Etiquetas de saltos</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nostrum commodi adipisci fuga, <br> deleniti officiis. 
         Fuga enim provident ut, ad voluptas doloribus maiores eveniet minima asperiores iusto tenetur possimus velit.</p>
+    <li><a href="index.html#inicio">☝️</a></li>    
     <hr>
-    <h2>Etiquetas de Formateo</h2>
+    <h2 id="EtiquetasFormateo">Etiquetas de Formateo</h2>
     <p>Tareas por Hacer
         <pre>               <!-- esta etiqueta hace que respete el orden tal cual lo excribes dentro de esta etiqueta-->
         -HTML
@@ -49,6 +74,8 @@
             </code>
         </pre>
     </p>
+    <li><a href="index.html#inicio">☝️</a></li>
+    <hr>
     <h2>Etiquetas semanticas estructurales</h2>
     <div>div - Es una etiqueta contenedora que no tiene semántica</div>
     <header>header - Cabecera de un sitito web o de una sección</header>
@@ -64,5 +91,95 @@
     <div style="background-color: yellow;">La etiqueta de bloque  por excencia es la div, una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas</div>
     <span style="background-color: green;">La etiqueta de linea por excencia es la span.Una etiqueta de linea solo ocupa el espacio de su contenido</span>
     <span>Soy otro span y no ocupamos todo un bloque</span>
+    <hr>
+    <h2>Figuras</h2>
+    <figure>
+        <img src="PeriodicTables_thumb3.jpg" alt="Tabla de los Elementos HTML">
+        <FIgcaption>Tabla de los Elementos HTML</FIgcaption>
+    </figure>
+    <hr>
+    <h2>Listas Ordenadas</h2>
+    <h3>Estaciones del Año</h3>
+    <ol reversed>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <ol start="3">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <ol type="I">
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ol>
+    <hr>
+    <h2>Listas Desordenadas</h2>
+    <h3>Cosas por hacer</h3>
+    <ul type="square">
+        <li>Terminar de grabar</li>
+        <li>Editar video</li>
+        <li>Subirlo a YouTube</li>     
+    </ul>
+    <ul type="circle">
+        <li>Terminar de grabar</li>
+        <li>Editar video</li>
+        <li>Subirlo a YouTube</li>     
+    </ul>
+    <hr>
+    <h2>Listas de Definicion</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Es una lenguaje de marcado que define el contenido de la web</dd>
+        <dt>CSS</dt>
+        <dd>Es un lenguaje de definición de estilos</dd>
+        <dt>JAVASCRIPT</dt>
+        <dd>Es el lenguaje de la Web</dd>
+    </dl>
+    <hr>
+    <h2>Tablas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Tabla de los Santo de Athena</th>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <th>Constelacion</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ikki</td>
+                <td>Fénix</td>
+                <td>Bronce</td>
+            </tr>
+            <tr>
+                <td>Shaina</td>
+                <td>Ofiuco</td>
+                <td>Plata</td>
+            </tr>
+            <tr>
+                <td>Saga</td>
+                <td>Géminis</td>
+                <td>Dorado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="3"><small>Saint Seiya fue creado por Masami Kurumada</small></th>
+        </tfoot>
+    </table>
+    <hr>
+    <h2>Enlaces</h2>
+    <p>Haz click aqui para ir a <a href="pagina1.html">pagina 1</a> </p>
+    <p>Haz click aqui para ir a <a href="https://google.com" target="_blank">abrir nueva pagina google</a> </p>
+    <p>Haz click aqui en la imagen para ir a youtube <a href="https://youtube.com" target="_blank"><img src="logoYouTube.png" alt="logo de youtube" width="50px" style="vertical-align: middle;"></a></p>
+
 </body>
 </html>
