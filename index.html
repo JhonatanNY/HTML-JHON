@@ -5,8 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo HTML</title> <!--Estas dos etiquetas nos ayudan al posicionamiento-->
-    <meta name="description" content="Aprendiendo Fundamentos de HTML"> <!--Estas dos etiquetas nos ayudan al posicionamiento-->   
+    <meta name="description" content="Aprendiendo Fundamentos de HTML">
+    <!--Estas dos etiquetas nos ayudan al posicionamiento-->
+    <link rel="canonical" href="http://tudominio.com/la-url-canonica">
+    <link rel="icon" href="imagenes/perro.png">
+    <link rel="apple-touch-icon" href="imagenes/perro.png">
     <link rel="stylesheet" href="estilos.css">
+    <meta name="theme-color" content="#5DADE2">
+    <meta property="og:title" content="Aprendiendo HTML">
+    <meta property="og:description" content="Aprendiendo Fundamentos de HTML">
+    <meta property="og:image" content="https://tudominio.com/imagenes/PeriodicTables_thumb3.jpg">
+    <meta property="og:url" content="https://tudominio.com/index.html">
+    <meta name="twitter:card" content="summary">
 </head>
 
 <body> <!-- -->
@@ -33,12 +43,17 @@
         <li><a href="#audio-y-video">Audio y Video</a></li>
         <li><a href="#iframe">Iframe</a></li>
         <li><a href="#formularios">Formularios</a></li>
+        <li><a href="#data-attributes">Data Attributes</a></li>
+        <li><a href="#metas-seo">Metaetiquetas para SEO y móviles</a></li>
+        <li><a href="#metas-redes">Metaetiquetas para Redes sociales</a></li>
+        <li><a href="#metas-accesibilidad">Accesibilidad Web</a></li>
+
         <li><a href="index.html#inicio">☝️</a></li>
     </ul>
     <h2 id="EtiquetasBasicas">Etiquetas de texto basicas</h2>
     <p>Palabras en <b>negrita</b>, <i>itálica</i>, <u>subrayado</u>, e=mc<sup>2</sup>,
         H<sub>2</sub>O, <mark>marcatexto</mark> <small>letras pequeñas</small></p>
-        <li><a href="index.html#inicio">☝️</a></li>
+    <li><a href="index.html#inicio">☝️</a></li>
     <hr>
     <h2 id="texto-semantico">Etiquetas de texto semanticas</h2>
     <strong>Este texto es importante</strong> <em>Este texto hace énfasis</em>
@@ -47,13 +62,15 @@
     <li><a href="index.html#inicio">☝️</a></li>
     <hr>
     <h2 id="EtiquetasSalto">Etiquetas de saltos</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nostrum commodi adipisci fuga, <br> deleniti officiis. 
-        Fuga enim provident ut, ad voluptas doloribus maiores eveniet minima asperiores iusto tenetur possimus velit.</p>
-    <li><a href="index.html#inicio">☝️</a></li>    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nostrum commodi adipisci fuga, <br> deleniti
+        officiis.
+        Fuga enim provident ut, ad voluptas doloribus maiores eveniet minima asperiores iusto tenetur possimus velit.
+    </p>
+    <li><a href="index.html#inicio">☝️</a></li>
     <hr>
     <h2 id="EtiquetasFormateo">Etiquetas de Formateo</h2>
     <p>Tareas por Hacer
-        <pre>               <!-- esta etiqueta hace que respete el orden tal cual lo excribes dentro de esta etiqueta-->
+    <pre>               <!-- esta etiqueta hace que respete el orden tal cual lo excribes dentro de esta etiqueta-->
         -HTML
             -Terminar de grabar
             -Editar en sólo Video
@@ -66,7 +83,7 @@
         <code>Este texto está en formato de código</code>
     </p>
     <p>
-        <pre>
+    <pre>
             <code>
                 import React, { Component } from "react";
                 import Title from "./Title";
@@ -84,15 +101,17 @@
     <main>main - Define la sección proncipal del documento, sólo puede existir una etiqueta main po documento</main>
     <footer>footer - Pié de página de un sitio web o de una sección</footer>
     <nav>nav - Representa una navegación</nav>
-    <article>article -  Representa una sección autocontenido(que por sí sola se explica)</article>
+    <article>article - Representa una sección autocontenido(que por sí sola se explica)</article>
     <aside>aside - Representa contenido complementario o secundario</aside>
     <section>section - Representa una sección de contenido genérico </section>
-    <address>address -  Representa una información de contacto</address>
+    <address>address - Representa una información de contacto</address>
     <li><a href="index.html#inicio">☝️</a></li>
     <hr>
     <h2 id="etiquetas-de-bloque">Etiquetas de Bloque VS Etiquetas de Linea</h2>
-    <div style="background-color: yellow;">La etiqueta de bloque  por excencia es la div, una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas</div>
-    <span style="background-color: green;">La etiqueta de linea por excencia es la span.Una etiqueta de linea solo ocupa el espacio de su contenido</span>
+    <div style="background-color: yellow;">La etiqueta de bloque por excencia es la div, una etiqueta de bloque es
+        aquella que genera saltos de linea con sus etiquetas hermanas</div>
+    <span style="background-color: green;">La etiqueta de linea por excencia es la span.Una etiqueta de linea solo ocupa
+        el espacio de su contenido</span>
     <span>Soy otro span y no ocupamos todo un bloque</span>
     <li><a href="index.html#inicio">☝️</a></li>
     <hr>
@@ -130,12 +149,12 @@
     <ul type="square">
         <li>Terminar de grabar</li>
         <li>Editar video</li>
-        <li>Subirlo a YouTube</li>     
+        <li>Subirlo a YouTube</li>
     </ul>
     <ul type="circle">
         <li>Terminar de grabar</li>
         <li>Editar video</li>
-        <li>Subirlo a YouTube</li>     
+        <li>Subirlo a YouTube</li>
     </ul>
     <li><a href="index.html#inicio">☝️</a></li>
     <hr>
@@ -189,16 +208,20 @@
     <h2 id="enlaces">Enlaces</h2>
     <p>Haz click aqui para ir a <a href="pagina1.html">pagina 1</a> </p>
     <p>Haz click aqui para ir a <a href="https://google.com" target="_blank">abrir nueva pagina google</a> </p>
-    <p>Haz click aqui en la imagen para ir a youtube <a href="https://youtube.com" target="_blank"><img src="imagenes/logoYouTube.png" alt="logo de youtube" width="50px" style="vertical-align: middle;"></a></p>
+    <p>Haz click aqui en la imagen para ir a youtube <a href="https://youtube.com" target="_blank"><img
+                src="imagenes/logoYouTube.png" alt="logo de youtube" width="50px" style="vertical-align: middle;"></a>
+    </p>
     <p>Enlace a <a href="mailto:jhonatanset.armando@gmail.com">correo electronico</a></p>
     <p>Enlace a <a href="tel:51982887871">telefono</a></p>
-    <p>Enlace a <a target="_blank" href="https://api.whatsapp.com/send?phone=51982887871&text=Hola quiero hace en una consulta">whatsapp</a></p>
+    <p>Enlace a <a target="_blank"
+            href="https://api.whatsapp.com/send?phone=51982887871&text=Hola quiero hace en una consulta">whatsapp</a>
+    </p>
     <li><a href="index.html#inicio">☝️</a></li>
     <hr>
     <h2 id="elemento-interactivos">Elementos Interactivos</h2>
 
     <button onclick="alert('Hola mundo')">boton</button><br><br>
-    
+
     <details>
         <summary>Título del Acordeón</summary>
         <article>
@@ -207,14 +230,14 @@
             <img src="imagenes/jesus-maria.jpg" alt="vista panoramica">
             <p>Segundo contenido</p>
             <p>Tercer contenido</p>
-    
+
         </article>
     </details>
 
     <dialog open>
         Esto es una ventana modal en HTML
     </dialog><br>
-    
+
     <li><a href="index.html#inicio">☝️</a></li>
     <hr>
     <h2 id="audio-y-video">Audio y Video</h2>
@@ -225,10 +248,16 @@
     <hr>
     <h2 id="iframe">Iframes</h2>
     <iframe src="pagina1.html" frameborder="1"></iframe><br>
-    <iframe id = "elComercio" src="https://elcomercio.pe/" frameborder="0"></iframe>
+    <iframe id="elComercio" src="https://elcomercio.pe/" frameborder="0"></iframe>
     <iframe src="media/Curriculum Vitae Nuñez 2.pdf" frameborder="0"></iframe>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4983591359764!2d-77.04288252493842!3d-12.077996988161251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f16c000001%3A0x9cef6373b8dba70d!2sHospital%20Edgardo%20Rebagliati%20Martins!5e0!3m2!1ses-419!2spe!4v1704568022986!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM?si=vBGeglyYn3Q5trXD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4983591359764!2d-77.04288252493842!3d-12.077996988161251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f16c000001%3A0x9cef6373b8dba70d!2sHospital%20Edgardo%20Rebagliati%20Martins!5e0!3m2!1ses-419!2spe!4v1704568022986!5m2!1ses-419!2spe"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM?si=vBGeglyYn3Q5trXD"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
     <li><a href="index.html#inicio">☝️</a></li>
     <hr>
     <h2 id="formularios">Formularios</h2>
@@ -240,16 +269,97 @@
     <input type="button" value="Boton"><br>
     <input type="submit"><br>
     <input type="reset"><br>
-    <input type="file" multiple><br>      <!-- "multiple" te permite cargar varios archivos-->
+    <input type="file" multiple><br> <!-- "multiple" te permite cargar varios archivos-->
     <input type="hidden"><br>
     <input type="email">
     <input type="number">
     <input type="password">
+    <input type="text" value="Jhontan Y" readonly disabled>
+    <input type="text" placeholder="Escribe tu nombre">
+
     <textarea name="" id="" cols="30" rows="5"></textarea>
     <select name="" id="">
-        <option value=""></option>
-    </select>
-    <li><a href="index.html#inicio">☝️</a></li>
+        <option value="">opcion 1</option>
+        <option value="">opcion 2</option>
+        <option value="">opcion 3</option>
+    </select><br>
+    <p>------------------------------------------------------------------------------------------------------</p>
+    <h3>Ejemplo de formulario</h3>
+    <form action="http://jonmircha.com/" method="get">
+        <!-- action indica hacia donde se va enviar la información--><!-- El metodo GET es el predeterminado por los formularios-->
+        <label for="usuario">USUARIO:</label>
+        <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario" pattern="^[A-Za-z]+$"
+            title="El campo solo acepta letras" required> <!-- for y id se relacionan -->
+        <label for="">PASSWORD:</label>
+        <input type="password" name="contrasena" placeholder="Escribe tu contraseña">
+        <input type="submit">
+    </form>
+    <h4>Selects, Radios y Checkbox en formulario</h4>
+    <form action="">
+        <p>Elige tu idioma</p>
+        <select name="idioma" id="" required>
+            <option value="">Elige una opción</option>
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+            <option value="fr">Frances</option>
+        </select>
+        <p>Elige un lenguaje de programación favorito</p>
+        <input type="radio" name="lenguaje" id="radio.js" value="js">
+        <label for="">JavaScript</label>
+        <input type="radio" name="lenguaje" id="radio.py" value="py">
+        <label for="">Python</label>
+        <input type="radio" name="lenguaje" id="radio.php" value="php">
+        <label for="">PHP</label>
+        <p>Elige tus intereses</p>
+        <label for="">
+            <input type="checkbox" name="intereses-deportes" value="deportes">
+            Deportes
+        </label>
+        <label for="">
+            <input type="checkbox" name="intereses-finanzas" value="finanzas">
+            Finanzas
+        </label>
+        <label for="">
+            <input type="checkbox" name="intereses-salud" value="salud">
+            Salud
+        </label>
 
+        <p>
+            <label for="">
+                <input type="checkbox" name="terminos" required>
+                ¿Aceptas términos y condiciones?
+            </label>
+        </p>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <li><a href="index.html#inicio">☝️</a></li>
+    <hr>
+    <h2 id="data-attributes"> Data Attributes</h2>
+    <ul>
+        <li data-id="1" data-name="spring">Primavera</li>
+        <li data-id="2" data-name="summer">Verano</li>
+        <li data-id="3" data-name="autumn">Otoño</li>
+        <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <li><a href="index.html#inicio">☝️</a></li>
+    <hr>
+    <h2 id="metas-seo"> Metaetiquetas para SEO y móviles</h2>
+    <li><a href="index.html#inicio">☝️</a></li>
+    <hr>
+    <h2 id="metas-redes"> Metaetiquetas para Redes sociales</h2>
+    <li><a href="index.html#inicio">☝️</a></li>
+    <hr>
+    <h2 id="metas-accesibilidad"> Accesibilidad Web</h2>
+    <h3 role="title">La estaciones del año</h3>
+    <ul role="list">
+        <li tabindex="1" role="listitem">Primavera</li>
+        <li tabindex="3" role="listitem">Verano</li>
+        <li tabindex="2" role="listitem">Otoño</li>
+        <li tabindex="4" role="listitem">Invierno</li>
+    </ul>
+    <a role="link" aria-label="En este enlace encontrarás más información sobre las estaciones del año" href="" target="_blank">Más información</a>
+    <li><a href="index.html#inicio">☝️</a></li>
 </body>
+
 </html>
